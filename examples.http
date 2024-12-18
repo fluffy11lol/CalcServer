@@ -1,0 +1,75 @@
+###
+
+# curl --location 'localhost:8080/api/v1/calculate'
+#--header 'Content-Type: application/json'
+#--data '{
+#    "expression":"2+2"
+#}'
+POST localhost:8080/api/v1/calculate
+Content-Type: application/json
+
+{
+  "expression": "2+2"
+}
+
+###
+
+# curl --location 'localhost:8080/api/v1/calculate'
+#--header 'Content-Type: application/json'
+#--data '{
+#    "expression":"(2+2)*2"
+#}'
+POST localhost:8080/api/v1/calculate
+Content-Type: application/json
+
+{
+  "expression": "(2+2)*2"
+}
+
+
+###
+
+# curl --location 'localhost:8080/api/v1/calculate'
+#--header 'Content-Type: application/json'
+#--data '{
+#    "expression":"2+-2"
+#}'
+POST localhost:8080/api/v1/calculate
+Content-Type: application/json
+
+{
+  "expression": "2+-2"
+}
+
+###
+
+# curl --location 'localhost:8080/api/v1/calculate'
+#--header 'Content-Type: application/json'
+#--data '{
+#    "expression":"2+2/0"
+#}'
+POST localhost:8080/api/v1/calculate
+Content-Type: application/json
+
+{
+  "expression": "2+2/0"
+}
+
+###
+
+# curl --location --request GET 'localhost:8080/api/v1/calculate'
+#--header 'Content-Type: application/json'
+#--data '{
+#    "expression":"2+2"
+#}'
+GET localhost:8080/api/v1/calculate
+Content-Type: application/json
+
+{
+  "expression": "2+2"
+}
+
+###
+
+
+
